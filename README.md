@@ -138,10 +138,10 @@ Get the installer for your system from [devkito.com/download](https://devkito.co
 | Windows 10/11, 64-bit | `Devkito_<version>_x64-setup.exe` |
 | Linux | `.AppImage`, `.deb` (Debian, Ubuntu) or `.rpm` (Fedora, RHEL) |
 
-The installers are not code-signed yet, so your system asks before opening Devkito the first time:
+The installers are not code-signed yet, so your system asks before opening Devkito the first time. You only do this once ([step-by-step guide](https://devkito.com/download#first-launch)):
 
-- **macOS:** right-click Devkito in Applications and choose **Open**, then **Open** again. If macOS says the app is damaged, run `xattr -cr /Applications/Devkito.app` and try again.
-- **Windows:** when SmartScreen appears, click **More info**, then **Run anyway**.
+- **macOS:** open Devkito once and click **Done** when macOS says it can't verify it. Then go to **System Settings → Privacy & Security**, click **Open Anyway** next to the message about Devkito, and confirm. (On macOS 14 or earlier, right-clicking Devkito in Applications and choosing **Open** also works.) If macOS says the app is damaged, run `xattr -cr /Applications/Devkito.app` and try again.
+- **Windows:** if Edge warns that the installer isn't commonly downloaded, choose **Keep**, then **Keep anyway**. When SmartScreen appears, click **More info**, then **Run anyway**.
 - **Linux (AppImage):** `chmod +x Devkito_*.AppImage`, then run it.
 
 After that, Devkito updates itself: it checks this repository for new releases and asks before installing one.
